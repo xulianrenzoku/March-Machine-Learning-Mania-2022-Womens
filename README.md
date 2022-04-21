@@ -14,11 +14,17 @@
 ### Feature Engineering
 ---
 Number of features: 66
+
 Features used in the model:
 - **Seeding**: The assumption behind the inclusion of seeding is, the gaps in competitiveness between top-seeded teams and bottom-seeded teams are relatively greater in womens' competition. In other words, strong favorites were relatively immune to upsets, based on historical results. 
 - **Points Per Possession**: Both offensive and defensive points per possession (PPP) are used as measures of teams' performances on both ends. The inclusion of PPP over points scored/allowed per game were made because the tempos of a teams' games in a season were just different and using PPP took away the pace factor. Moreover, predicting difference in PPP over raw points in Stage 1 (will explain later) did lead to better predictions. Number of possessions of games wrere estimated by using (Kenpom's coefficient on free throws)[https://kenpom.com/blog/the-possession/].
-- Four Factors: 
-- 538 Rating: 
+- **Four Factors**: (Dean Oliver's Four factors)[https://www.basketball-reference.com/about/factors.html] are included as means to summarize teams' performance on various aspects.
+  - Effective Field Goal Percentage (eFG):
+  - Turnover Rate (TO%):
+  - Offensive Rebound Rate (OR%):
+  - Free Throw Rate (FTr):
+- **538 Rating**: 
+
 Features not used in the model:
 - **Winning Percentage**: Disparities exist among conferences in terms of competition level. Comparing teams with higher winning percentage in a Mid-Major conference to teams with lower winning percentage in a Power Five conference is not an apples to apples proposition. Therefore, teams' winning percentages are not used as features.
 
