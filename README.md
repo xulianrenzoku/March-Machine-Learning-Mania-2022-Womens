@@ -3,7 +3,7 @@
 
 [March Machine Learning Mania 2022 - Women's](https://www.kaggle.com/competitions/womens-march-mania-2022)
 
-<img src='static/ncaaw-2022.png'>
+<img src='static/ncaaw-2022.png' width='600'> 
 
 ### About the Competition
 ---
