@@ -37,6 +37,8 @@ Inspired by [raddar's work](https://www.kaggle.com/code/raddar/paris-madness/not
 - **Stage 1**: Use an K-fold XGBoost Regression model to estimate the difference between two teams in points per 100 possessions. For log-loss optimization in the next stage, the predicted gaps in points per 100 possessions were clipped between -50 and +50.
 - **Stage 2**: Based on the predictions from Stage 1, get the probabilities of winning (based on historical results) given the predicted gaps in points per 100 possessions. Then, use spline interpolation to smooth the predictions. 
 
-To get into prize contention of the competition, making manual adjustments are necessary. Based on [historical results](https://en.wikipedia.org/wiki/NCAA_Division_I_Women%27s_Basketball_Tournament_upsets), I assigned a 99.99% win rate on matchups that would send all the No. 1/2/3 seeds to the Second Round and all the No.1 seeds to the Sweet Sixteen. In retrospect, this strategy turned out to be relatively safe as there were
+<img src='static/modeling.png' width='600'> 
+
+To get into prize contention of the competition, making manual adjustments are necessary. Based on [historical results](https://en.wikipedia.org/wiki/NCAA_Division_I_Women%27s_Basketball_Tournament_upsets), I assigned a 99.99% winning probabilty on matchups that would send all the No. 1/2/3 seeds to the Second Round and all the No.1 seeds to the Sweet Sixteen. In retrospect, this strategy turned out to be relatively safe as there were
 two No. 2 seeds losing to No. 10 seeds in the Second Round.
 
