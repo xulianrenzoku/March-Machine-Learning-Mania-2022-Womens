@@ -5,14 +5,14 @@
 
 <img src='static/ncaaw-2022.png' width='600'> 
 
-### About the Competition
 ---
+### About the Competition
 - **Task:** Predict the outcomes of this year's US women's college basketball tournament (NCAA Division I). 
 - **Eval Metric:** Submissions are scored on the log loss. According to Kaggle, the use of the logarithm provides extreme punishments for being both confident and wrong. Therefore, in the ideal world, you want your predictions to be relativefly aggressive when you nail the outcomes and relatively modest when the upsets occur.
 - **Timeline:** Participants were asked to submit their predictions before the first round started. Therefore, all participants must predict all the possible matchups (2,016 in total). 
 
-### Feature Engineering
 ---
+### Feature Engineering
 Number of features: 66
 
 Features used in the model:
@@ -31,8 +31,8 @@ Features not used in the model:
 Time-related factor considered:
 - **Regular Season/Last 30 Days Split**: All teams competing in NCAA Division I basketball go through a 'non-conference --> conference' schedule. To extract the momentum (rising and fading) of tournaments' paticipants, teams' PPPs and 4 factors over the last 30 days were also computed. As mentioned above, disparities exist among conferences. Therefore, there is a need to adjust the numbers. However, I chose to skip this part due to time restraints, will attempt to address this in future competitions.
 
-### Modeling
 ---
+### Modeling
 Inspired by [raddar's work](https://www.kaggle.com/code/raddar/paris-madness/notebook), a two-stage model is used to predict the outcomes.
 - **Stage 1**: Use an K-fold XGBoost Regression model to estimate the difference between two teams in points per 100 possessions. For log-loss optimization in the next stage, the predicted gaps in points per 100 possessions were clipped between -50 and +50.
 - **Stage 2**: Based on the predictions from Stage 1, get the probabilities of winning (based on historical results) given the predicted gaps in points per 100 possessions. Then, use spline interpolation to smooth the predictions. 
