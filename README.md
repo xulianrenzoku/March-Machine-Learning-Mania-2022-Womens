@@ -51,4 +51,11 @@ Below are things that worked:
 
 Below are things that I hope to improve for next year:
 - Check injury report before the tournament. I was able to stay in the top 5 through the first 3/4 of the tournament, then was 'pushed down' by a formidable run from UConn (with Paige Bueckers back), who had a couple of incredible wins against two No.1 seeds. 
-- 
+- Introduce adjustments to teams' Four Factors numbers in order to address the disparity among conferences.
+- Set the score gap to zero for games that went into overtime. The intuition is, going into overtime indicates that two teams went neck-to-neck. However, blowouts in extra minutes would lead to a wrong impression. Nonetheless, boost benefitting from such an adjustment could be tiny.
+
+---
+### Notebooks
+[Competition Notebook](https://github.com/xulianrenzoku/March-Machine-Learning-Mania-2022-Womens/blob/main/ncaaw_model.ipynb)
+[Tournament Recap](https://github.com/xulianrenzoku/March-Machine-Learning-Mania-2022-Womens/blob/main/tourney_recap_women.ipynb)
+[Kenpom Scraper for Men's Competition](https://github.com/xulianrenzoku/March-Machine-Learning-Mania-2022-Womens/blob/main/kenpom_data_scraper.ipynb)
