@@ -57,5 +57,7 @@ Below are things that I hope to improve for next year:
 ---
 ### Notebooks
 [Competition Notebook](https://github.com/xulianrenzoku/March-Machine-Learning-Mania-2022-Womens/blob/main/ncaaw_model.ipynb)
+
 [Tournament Recap](https://github.com/xulianrenzoku/March-Machine-Learning-Mania-2022-Womens/blob/main/tourney_recap_women.ipynb)
+
 [Kenpom Scraper for Men's Competition](https://github.com/xulianrenzoku/March-Machine-Learning-Mania-2022-Womens/blob/main/kenpom_data_scraper.ipynb)
